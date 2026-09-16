@@ -1,13 +1,12 @@
-def add_sample_students(students):
-    # ในโปรแกรมจริงสามารถเปลี่ยนเป็นรับข้อมูลจากผู้ใช้ได้
-    return students
-
 def show_students(students):
     if not students:
-        print("ไม่พบข้อมูล")
+        print("ยังไม่มีข้อมูลนักศึกษา")
         return
-
-    print("ID   | ชื่อ | คะแนน | เกรด")
-    print("-" * 35)
+    print("รหัส   | ชื่อ            | คะแนน | เกรด")
+    print("-" * 48)
     for student in students:
         print(student)
+
+
+def count_students(students):
+    return len(students)

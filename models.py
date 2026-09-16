@@ -6,4 +6,4 @@ class Student:
         self.grade = grade
 
     def __str__(self):
-        return f"{self.student_id} | {self.name} | {self.score:.1f} | {self.grade}"
+        return f"{self.student_id:<6} | {self.name:<15} | {self.score:>6.1f} | {self.grade:<4}"
